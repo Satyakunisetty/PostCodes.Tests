@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>24 Aug 2020, 00:38</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="703275362">0.703</td>
+              <td class="duration" data-value="703275362">4.178</td>
+              <td class="duration" data-value="5626202900">5.626</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="34478550">0.034</td>
+              <td class="duration" data-value="34478550">0.259</td>
+              <td class="duration" data-value="275828400">0.275</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api_using_and(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="169893000">0.169</td>
+              <td class="duration" data-value="169893000">0.169</td>
+              <td class="duration" data-value="169893000">0.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_validate_get_postcode_path_api_response_using_and(java.lang.String,java.lang.Integer,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_and_based_on(java.lang.Integer,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_response_values(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1998650">0.001</td>
+              <td class="duration" data-value="1998650">0.002</td>
+              <td class="duration" data-value="3997300">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1497650">0.001</td>
+              <td class="duration" data-value="1497650">0.001</td>
+              <td class="duration" data-value="2995300">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_result_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1500500">0.001</td>
+              <td class="duration" data-value="1500500">0.002</td>
+              <td class="duration" data-value="3001000">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="223103600">0.223</td>
+              <td class="duration" data-value="223103600">0.281</td>
+              <td class="duration" data-value="2454139600">2.454</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="1181118">0.001</td>
+              <td class="duration" data-value="1181118">0.002</td>
+              <td class="duration" data-value="12992300">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api_using_and(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="154265300">0.154</td>
+              <td class="duration" data-value="154265300">0.154</td>
+              <td class="duration" data-value="154265300">0.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.user_validate_get_postcode_query_api_based_on_and(java.lang.String,java.lang.Integer,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.user_validates_get_postcode_query_api_response_values_based_on_partial_postcode(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="998000">0.000</td>
+              <td class="duration" data-value="998000">0.000</td>
+              <td class="duration" data-value="998000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_errors(int,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_response_result_section_partial_postcode(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000100">0.001</td>
+              <td class="duration" data-value="1000100">0.001</td>
+              <td class="duration" data-value="1000100">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_result_section(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="999200">0.000</td>
+              <td class="duration" data-value="999200">0.000</td>
+              <td class="duration" data-value="1998400">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_result(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="500050">0.000</td>
+              <td class="duration" data-value="500050">0.001</td>
+              <td class="duration" data-value="1000100">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.GetPostcodeQuery.validates_get_postcode_query_api_response_codes_section_values(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.call_post_bulk_postcode_lookup_api_to_check_invalid_scenarios(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="163764566">0.163</td>
+              <td class="duration" data-value="163764566">0.167</td>
+              <td class="duration" data-value="491293700">0.491</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()</td>
+              <td>9</td>
+              <td class="duration" data-value="1334366">0.001</td>
+              <td class="duration" data-value="1334366">0.002</td>
+              <td class="duration" data-value="12009300">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="186625966">0.186</td>
+              <td class="duration" data-value="186625966">0.210</td>
+              <td class="duration" data-value="1119755800">1.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.user_validate_post_bulk_postcode_lookup_api_and(java.lang.Integer,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="332933">0.000</td>
+              <td class="duration" data-value="332933">0.000</td>
+              <td class="duration" data-value="998800">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="502300">0.000</td>
+              <td class="duration" data-value="502300">0.001</td>
+              <td class="duration" data-value="1004600">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_codes_section_values(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="2995650">0.002</td>
+              <td class="duration" data-value="2995650">0.002</td>
+              <td class="duration" data-value="5991300">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_result_section_values(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="499200">0.000</td>
+              <td class="duration" data-value="499200">0.000</td>
+              <td class="duration" data-value="998400">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>26</td>
+            <td>88</td>
+            <td class="duration">0.117</td>
+            <td class="duration">5.626</td>
+            <td class="duration">10.340</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

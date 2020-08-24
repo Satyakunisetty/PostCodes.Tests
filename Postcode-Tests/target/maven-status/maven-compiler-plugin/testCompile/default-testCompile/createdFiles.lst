@@ -1,0 +1,5 @@
+StepDefinitions\PostBulkPostcodeLookup.class
+StepDefinitions\GetPostcodePath.class
+utils\ReusableMethods.class
+cucumber\Options\TestRunner.class
+StepDefinitions\GetPostcodeQuery.class

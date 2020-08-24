@@ -1,0 +1,12 @@
+POJO\GetPostcodeQueryModel$Codes.class
+POJO\GetPostcodeQueryModel.class
+POJO\PostBulkPostcodesModel$Codes.class
+POJO\PostBulkPostcodesModel$Resultroot.class
+POJO\GetPostcodeQueryModel$Result.class
+POJO\PostBulkPostcodesModel$Result.class
+POJO\GetPostcodePathModel$Result.class
+POJO\PostcodeErrorModel.class
+POJO\GetPostcodePathModel$Codes.class
+POJO\PostBulkPostcodeLookupPayload.class
+POJO\GetPostcodePathModel.class
+POJO\PostBulkPostcodesModel.class

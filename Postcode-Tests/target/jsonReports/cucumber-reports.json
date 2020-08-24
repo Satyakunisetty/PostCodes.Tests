@@ -1,0 +1,3398 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-23T23:38:33.915Z",
+        "line": 11,
+        "name": "Validate Get API values by passing Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-get-api-values-by-passing-postcode-as-path-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 259840100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User configure the base URL of GetPostcodePath API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4178590900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls GetPostcodePathAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2998500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates GetPostcodePath API response values like 1,526993,136858,\"England\",\"South East Coast\",-0.187002,51.116948,\"South East\",\"West Sussex\" and \"South East\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 56
+                },
+                {
+                  "val": "526993",
+                  "offset": 58
+                },
+                {
+                  "val": "136858",
+                  "offset": 65
+                },
+                {
+                  "val": "\"England\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"South East Coast\"",
+                  "offset": 82
+                },
+                {
+                  "val": "-0.187002",
+                  "offset": 101
+                },
+                {
+                  "val": "51.116948",
+                  "offset": 111
+                },
+                {
+                  "val": "\"South East\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"West Sussex\"",
+                  "offset": 134
+                },
+                {
+                  "val": "\"South East\"",
+                  "offset": 152
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_response_values(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:38.540Z",
+        "line": 12,
+        "name": "Validate Get API values by passing Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-get-api-values-by-passing-postcode-as-path-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User configure the base URL of GetPostcodePath API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238698200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls GetPostcodePathAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates GetPostcodePath API response values like 1,532440,166172,\"England\",\"London\",-0.098363,51.379158,\"London\",\"Croydon\" and \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 56
+                },
+                {
+                  "val": "532440",
+                  "offset": 58
+                },
+                {
+                  "val": "166172",
+                  "offset": 65
+                },
+                {
+                  "val": "\"England\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 82
+                },
+                {
+                  "val": "-0.098363",
+                  "offset": 91
+                },
+                {
+                  "val": "51.379158",
+                  "offset": 101
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 134
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_response_values(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:38.835Z",
+        "line": 21,
+        "name": "Validate result section values from Get API values by using Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-result-section-values-from-get-api-values-by-using-postcode-as-path-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User configure the base URL of GetPostcodePath API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 212537600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user calls GetPostcodePathAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user validates GetPostcodePath API result section values \"Crawley 004C\",\"Crawley 004\",\"1ED\",\"RH10\",\"Crawley\",\"Crawley\",\"Crawley, unparished area\",\"West Sussex\",\"Three Bridges\",\"Northgate \u0026 West Green\",\"NHS West Sussex\",\"West Sussex (North East)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Crawley 004C\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Crawley 004\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"1ED\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"RH10\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"Crawley\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"Crawley\"",
+                  "offset": 109
+                },
+                {
+                  "val": "\"Crawley, unparished area\"",
+                  "offset": 119
+                },
+                {
+                  "val": "\"West Sussex\"",
+                  "offset": 146
+                },
+                {
+                  "val": "\"Three Bridges\"",
+                  "offset": 160
+                },
+                {
+                  "val": "\"Northgate \u0026 West Green\"",
+                  "offset": 176
+                },
+                {
+                  "val": "\"NHS West Sussex\"",
+                  "offset": 201
+                },
+                {
+                  "val": "\"West Sussex (North East)\"",
+                  "offset": 219
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_result_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:39.089Z",
+        "line": 22,
+        "name": "Validate result section values from Get API values by using Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-result-section-values-from-get-api-values-by-using-postcode-as-path-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User configure the base URL of GetPostcodePath API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 216414600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user calls GetPostcodePathAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user validates GetPostcodePath API result section values \"Croydon 027C\",\"Croydon 027\",\"2WR\",\"CR0\",\"Croydon Central\",\"Croydon\",\"Croydon, unparished area\",\"\",\"Fairfield\",\"\",\"NHS South West London\",\"Croydon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Croydon 027C\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Croydon 027\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"2WR\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"CR0\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"Croydon Central\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 116
+                },
+                {
+                  "val": "\"Croydon, unparished area\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 153
+                },
+                {
+                  "val": "\"Fairfield\"",
+                  "offset": 156
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 168
+                },
+                {
+                  "val": "\"NHS South West London\"",
+                  "offset": 171
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 195
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_result_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:39.361Z",
+        "line": 31,
+        "name": "Validate codes section values from Get API values by using Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-codes-section-values-from-get-api-values-by-using-postcode-as-path-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1997700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User configure the base URL of GetPostcodePath API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 224082500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user calls GetPostcodePathAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1991900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user validates GetPostcodePath API codes section values \"E07000226\",\"E10000032\",\"E05012925\",\"E43000148\",\"E14000652\",\"E38000248\",\"70F\",\"E58001645\",\"UKJ28\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"E07000226\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"E10000032\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"E05012925\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"E43000148\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"E14000652\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"E38000248\"",
+                  "offset": 116
+                },
+                {
+                  "val": "\"70F\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"E58001645\"",
+                  "offset": 134
+                },
+                {
+                  "val": "\"UKJ28\"",
+                  "offset": 146
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathCodesSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:39.614Z",
+        "line": 32,
+        "name": "Validate codes section values from Get API values by using Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-codes-section-values-from-get-api-values-by-using-postcode-as-path-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User configure the base URL of GetPostcodePath API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221032700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user calls GetPostcodePathAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user validates GetPostcodePath API codes section values \"E09000008\",\"E99999999\",\"E05011468\",\"E43000198\",\"E14000654\",\"E38000245\",\"36L\",\"E99999999\",\"UKI62\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"E09000008\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"E99999999\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"E05011468\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"E43000198\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"E14000654\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"E38000245\"",
+                  "offset": 116
+                },
+                {
+                  "val": "\"36L\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"E99999999\"",
+                  "offset": 134
+                },
+                {
+                  "val": "\"UKI62\"",
+                  "offset": 146
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.validate_get_postcode_path_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathCodesSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:39.870Z",
+        "line": 42,
+        "name": "Validate error codes from Get API by passing Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-error-codes-from-get-api-by-passing-postcode-as-path-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User configure the base URL of GetPostcodePath API using \"CR0 2WR 123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161953700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user calls GetPostcodePathAPI based on \"CR0 2WR 123\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user validates GetPostcodePath API 404 and \"Invalid postcode\" based on \"CR0 2WR 123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Invalid postcode\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 71
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_and_based_on(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathErroCodes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:40.058Z",
+        "line": 43,
+        "name": "Validate error codes from Get API by passing Postcode as path parameter",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-error-codes-from-get-api-by-passing-postcode-as-path-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7994300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User configure the base URL of GetPostcodePath API using \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 172892700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user calls GetPostcodePathAPI based on \"\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_calls_get_postcode_path_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user validates GetPostcodePath API 400 and \"No postcode query submitted. Remember to include query parameter\" based on \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                },
+                {
+                  "val": "\"No postcode query submitted. Remember to include query parameter\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 119
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_validates_get_postcode_path_api_and_based_on(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathErroCodes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:40.259Z",
+        "line": 52,
+        "name": "Validate error codes from Get API method by passing Invalid Resource",
+        "description": "",
+        "id": "get-api-method-call-using-postcode-as-a-path-parameter;validate-error-codes-from-get-api-method-by-passing-invalid-resource;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 169893000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User configure the base URL of GetPostcodePath API using \"CR0 2WR\" and \"InvalidResource\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"InvalidResource\"",
+                  "offset": 71
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_configure_the_base_url_of_get_postcode_path_api_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user validate GetPostcodePath API response using \"InvalidResource\", 404 and \"Resource not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"InvalidResource\"",
+                  "offset": 49
+                },
+                {
+                  "val": "404",
+                  "offset": 68
+                },
+                {
+                  "val": "\"Resource not found\"",
+                  "offset": 76
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodePath.user_validate_get_postcode_path_api_response_using_and(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodePathParameter"
+          },
+          {
+            "name": "@GetAPIPathErroCodes"
+          }
+        ]
+      }
+    ],
+    "name": "Get API Method call using Postcode as a path parameter",
+    "description": "",
+    "id": "get-api-method-call-using-postcode-as-a-path-parameter",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/GetPostcodePath.feature",
+    "tags": [
+      {
+        "name": "@GetAPIPostcodePathParameter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-23T23:38:40.448Z",
+        "line": 12,
+        "name": "Validate Get API values by using Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-get-api-values-by-using-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2998500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 191880100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates GetPostcodeQuery API response values like 1,526993,136858,\"England\",\"South East Coast\",-0.187002,51.116948,\"South East\",\"West Sussex\" and \"South East\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 57
+                },
+                {
+                  "val": "526993",
+                  "offset": 59
+                },
+                {
+                  "val": "136858",
+                  "offset": 66
+                },
+                {
+                  "val": "\"England\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"South East Coast\"",
+                  "offset": 83
+                },
+                {
+                  "val": "-0.187002",
+                  "offset": 102
+                },
+                {
+                  "val": "51.116948",
+                  "offset": 112
+                },
+                {
+                  "val": "\"South East\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"West Sussex\"",
+                  "offset": 135
+                },
+                {
+                  "val": "\"South East\"",
+                  "offset": 153
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_result(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:40.681Z",
+        "line": 13,
+        "name": "Validate Get API values by using Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-get-api-values-by-using-postcode-as-query-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185884800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls GetPostcodeQueryAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates GetPostcodeQuery API response values like 1,532440,166172,\"England\",\"London\",-0.098363,51.379158,\"London\",\"Croydon\" and \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 57
+                },
+                {
+                  "val": "532440",
+                  "offset": 59
+                },
+                {
+                  "val": "166172",
+                  "offset": 66
+                },
+                {
+                  "val": "\"England\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 83
+                },
+                {
+                  "val": "-0.098363",
+                  "offset": 92
+                },
+                {
+                  "val": "51.379158",
+                  "offset": 102
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 135
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_result(int,int,int,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:40.885Z",
+        "line": 23,
+        "name": "Validate result section values from Get API values by passing Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-result-section-values-from-get-api-values-by-passing-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255842400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user validates GetPostcodeQuery API result section values like \"Crawley 004C\",\"Crawley 004\",\"1ED\",\"RH10\",\"Crawley\",\"Crawley\",\"Crawley, unparished area\",\"West Sussex\",\"Three Bridges\",\"Northgate \u0026 West Green\",\"NHS West Sussex\",\"West Sussex (North East)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Crawley 004C\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Crawley 004\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"1ED\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"RH10\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Crawley\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"Crawley\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"Crawley, unparished area\"",
+                  "offset": 125
+                },
+                {
+                  "val": "\"West Sussex\"",
+                  "offset": 152
+                },
+                {
+                  "val": "\"Three Bridges\"",
+                  "offset": 166
+                },
+                {
+                  "val": "\"Northgate \u0026 West Green\"",
+                  "offset": 182
+                },
+                {
+                  "val": "\"NHS West Sussex\"",
+                  "offset": 207
+                },
+                {
+                  "val": "\"West Sussex (North East)\"",
+                  "offset": 225
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_result_section(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:41.156Z",
+        "line": 24,
+        "name": "Validate result section values from Get API values by passing Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-result-section-values-from-get-api-values-by-passing-postcode-as-query-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 188884500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user calls GetPostcodeQueryAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user validates GetPostcodeQuery API result section values like \"Croydon 027C\",\"Croydon 027\",\"2WR\",\"CR0\",\"Croydon Central\",\"Croydon\",\"Croydon, unparished area\",\"\",\"Fairfield\",\"\",\"NHS South West London\",\"Croydon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Croydon 027C\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Croydon 027\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"2WR\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"CR0\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Croydon Central\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"Croydon, unparished area\"",
+                  "offset": 132
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 159
+                },
+                {
+                  "val": "\"Fairfield\"",
+                  "offset": 162
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 174
+                },
+                {
+                  "val": "\"NHS South West London\"",
+                  "offset": 177
+                },
+                {
+                  "val": "\"Croydon\"",
+                  "offset": 201
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_result_section(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryResultSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:41.364Z",
+        "line": 34,
+        "name": "Validate codes section values from Get API values by passing Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-codes-section-values-from-get-api-values-by-passing-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10 1ED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 167897400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10 1ED\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10 1ED\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user validates GetPostcodeQuery API codes section values like \"E07000226\",\"E10000032\",\"E05012925\",\"E43000148\",\"E14000652\",\"E38000248\",\"70F\",\"E58001645\",\"UKJ28\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"E07000226\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"E10000032\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"E05012925\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"E43000148\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"E14000652\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"E38000248\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"70F\"",
+                  "offset": 134
+                },
+                {
+                  "val": "\"E58001645\"",
+                  "offset": 140
+                },
+                {
+                  "val": "\"UKJ28\"",
+                  "offset": 152
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryCodesSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:41.549Z",
+        "line": 35,
+        "name": "Validate codes section values from Get API values by passing Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-codes-section-values-from-get-api-values-by-passing-postcode-as-query-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"CR0 2WR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197875500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user calls GetPostcodeQueryAPI based on \"CR0 2WR\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user validates GetPostcodeQuery API codes section values like \"E09000008\",\"E99999999\",\"E05011468\",\"E43000198\",\"E14000654\",\"E38000245\",\"36L\",\"E99999999\",\"UKI62\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"E09000008\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"E99999999\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"E05011468\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"E43000198\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"E14000654\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"E38000245\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"36L\"",
+                  "offset": 134
+                },
+                {
+                  "val": "\"E99999999\"",
+                  "offset": 140
+                },
+                {
+                  "val": "\"UKI62\"",
+                  "offset": 152
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_codes_section_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryCodesSection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:41.764Z",
+        "line": 48,
+        "name": "Validate Get API values by using partial Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-get-api-values-by-using-partial-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197881300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user validates GetPostcodeQuery API response values based on Partial postcode",
+            "match": {
+              "location": "StepDefinitions.GetPostcodeQuery.user_validates_get_postcode_query_api_response_values_based_on_partial_postcode(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "quality",
+                  "eastings",
+                  "northings",
+                  "country",
+                  "nhs_ha",
+                  "longitude",
+                  "latitude",
+                  "european_electoral_region",
+                  "primary_care_trust",
+                  "region"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0EZ",
+                  "1",
+                  "526911",
+                  "136846",
+                  "England",
+                  "South East Coast",
+                  "-0.188177",
+                  "51.116858",
+                  "South East",
+                  "West Sussex",
+                  "South East"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0AG",
+                  "1",
+                  "526911",
+                  "136846",
+                  "England",
+                  "South East Coast",
+                  "-0.188177",
+                  "51.116858",
+                  "South East",
+                  "West Sussex",
+                  "South East"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryforPartialPostcode"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:41.980Z",
+        "line": 61,
+        "name": "Validate Get API values of result section by using partial Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-get-api-values-of-result-section-by-using-partial-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 251923800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user validate GetPostcodeQuery API response result section values based on Partial postcode",
+            "match": {
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_response_result_section_partial_postcode(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "lsoa",
+                  "msoa",
+                  "incode",
+                  "outcode",
+                  "parliamentary_constituency",
+                  "admin_district",
+                  "parish",
+                  "admin_county",
+                  "admin_ward",
+                  "ced",
+                  "ccg",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0EZ",
+                  "Crawley 004C",
+                  "Crawley 004",
+                  "0EZ",
+                  "RH10",
+                  "Crawley",
+                  "Crawley",
+                  "Crawley, unparished area",
+                  "West Sussex",
+                  "Three Bridges",
+                  "Northgate \u0026 West Green",
+                  "NHS West Sussex",
+                  "West Sussex (North East)"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0AG",
+                  "Crawley 004C",
+                  "Crawley 004",
+                  "0AG",
+                  "RH10",
+                  "Crawley",
+                  "Crawley",
+                  "Crawley, unparished area",
+                  "West Sussex",
+                  "Three Bridges",
+                  "Northgate \u0026 West Green",
+                  "NHS West Sussex",
+                  "West Sussex (North East)"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryforPartialPostcode"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:42.245Z",
+        "line": 74,
+        "name": "Validate Get API values of codes section by using partial Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-get-api-values-of-codes-section-by-using-partial-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"RH10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270330400,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user calls GetPostcodeQueryAPI based on \"RH10\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RH10\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user validates GetPostcodeQuery API response codes section values based on Partial postcode",
+            "match": {
+              "location": "StepDefinitions.GetPostcodeQuery.validates_get_postcode_query_api_response_codes_section_values(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "admin_district",
+                  "admin_county",
+                  "admin_ward",
+                  "parish",
+                  "parliamentary_constituency",
+                  "ccg",
+                  "ccg_id",
+                  "ced",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0EZ",
+                  "E07000226",
+                  "E10000032",
+                  "E05012925",
+                  "E43000148",
+                  "E14000652",
+                  "E38000248",
+                  "70F",
+                  "E58001645",
+                  "UKJ28"
+                ]
+              },
+              {
+                "cells": [
+                  "RH10 0AG",
+                  "E07000226",
+                  "E10000032",
+                  "E05012925",
+                  "E43000148",
+                  "E14000652",
+                  "E38000248",
+                  "70F",
+                  "E58001645",
+                  "UKJ28"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryforPartialPostcode"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:42.537Z",
+        "line": 85,
+        "name": "Validate error codes from Get API method by passing Invalid/Empty Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-error-codes-from-get-api-method-by-passing-invalid/empty-postcode-as-query-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"CR0 2WR 123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 263956100,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user calls GetPostcodeQueryAPI based on \"CR0 2WR 123\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user validate GetPostcodeQuery API 200 and \"\" based on \"CR0 2WR 123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"CR0 2WR 123\"",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_errors(int,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryErroCodes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:42.834Z",
+        "line": 86,
+        "name": "Validate error codes from Get API method by passing Invalid/Empty Postcode as Query parameter",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-error-codes-from-get-api-method-by-passing-invalid/empty-postcode-as-query-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281783300,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user calls GetPostcodeQueryAPI based on \"\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_calls_get_postcode_query_api_based_on_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user validate GetPostcodeQuery API 400 and \"No postcode query submitted. Remember to include query parameter\" based on \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                },
+                {
+                  "val": "\"No postcode query submitted. Remember to include query parameter\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 119
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.validate_get_postcode_query_api_errors(int,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryErroCodes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:43.125Z",
+        "line": 95,
+        "name": "Validate error codes from Get API method by passing Invalid Resource",
+        "description": "",
+        "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter;validate-error-codes-from-get-api-method-by-passing-invalid-resource;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 154265300,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "User configure the base URL of GetPostcodeQuery API using \"CR0 2WR\" and \"InvalidResource\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CR0 2WR\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"InvalidResource\"",
+                  "offset": 72
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_configure_the_base_url_of_get_postcode_query_api_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validate API response using \"InvalidResource\", 404 and \"Resource not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"InvalidResource\"",
+                  "offset": 33
+                },
+                {
+                  "val": "404",
+                  "offset": 52
+                },
+                {
+                  "val": "\"Resource not found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "StepDefinitions.GetPostcodeQuery.user_validate_get_postcode_query_api_based_on_and(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPIPostcodeQueryParameter"
+          },
+          {
+            "name": "@GetAPIQueryErroCodes"
+          }
+        ]
+      }
+    ],
+    "name": "Get Method API call using Postcode as a optional Query parameter",
+    "description": "",
+    "id": "get-method-api-call-using-postcode-as-a-optional-query-parameter",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/GetPostcodeQuery.feature",
+    "tags": [
+      {
+        "name": "@GetAPIPostcodeQueryParameter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:43.314Z",
+        "line": 20,
+        "name": "Validate Post API values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-values-by-passing-single/multiple-postcodes-as-payload;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 199970100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls PostBulkPostcodeLookup API passing \"PR3 0SG,M45 6GN,EX165BL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PR3 0SG,M45 6GN,EX165BL\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1004600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate PostBulkPostcodeLookup API values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "quality",
+                  "eastings",
+                  "northings",
+                  "country",
+                  "nhs_ha",
+                  "longitude",
+                  "latitude",
+                  "european_electoral_region",
+                  "primary_care_trust",
+                  "region"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "1",
+                  "351012",
+                  "440302",
+                  "England",
+                  "North West",
+                  "-2.746251",
+                  "53.856635",
+                  "North West",
+                  "North Lancashire Teaching",
+                  "North West"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "1",
+                  "380416",
+                  "406002",
+                  "England",
+                  "North West",
+                  "-2.297052",
+                  "53.55028",
+                  "North West",
+                  "Bury",
+                  "North West"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "1",
+                  "294478",
+                  "112252",
+                  "England",
+                  "South West",
+                  "-3.50197",
+                  "50.900064",
+                  "South West",
+                  "Devon",
+                  "South West"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "1",
+                  "529397",
+                  "174374",
+                  "England",
+                  "London",
+                  "-0.139096",
+                  "51.45357",
+                  "London",
+                  "Lambeth",
+                  "London"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "1",
+                  "377771",
+                  "131822",
+                  "England",
+                  "South West",
+                  "-2.31874",
+                  "51.085279",
+                  "South West",
+                  "Wiltshire",
+                  "South West"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIResultSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:43.553Z",
+        "line": 21,
+        "name": "Validate Post API values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-values-by-passing-single/multiple-postcodes-as-payload;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 150908000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls PostBulkPostcodeLookup API passing \"SW4 9HS,,BA12 6PN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SW4 9HS,,BA12 6PN\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate PostBulkPostcodeLookup API values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "quality",
+                  "eastings",
+                  "northings",
+                  "country",
+                  "nhs_ha",
+                  "longitude",
+                  "latitude",
+                  "european_electoral_region",
+                  "primary_care_trust",
+                  "region"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "1",
+                  "351012",
+                  "440302",
+                  "England",
+                  "North West",
+                  "-2.746251",
+                  "53.856635",
+                  "North West",
+                  "North Lancashire Teaching",
+                  "North West"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "1",
+                  "380416",
+                  "406002",
+                  "England",
+                  "North West",
+                  "-2.297052",
+                  "53.55028",
+                  "North West",
+                  "Bury",
+                  "North West"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "1",
+                  "294478",
+                  "112252",
+                  "England",
+                  "South West",
+                  "-3.50197",
+                  "50.900064",
+                  "South West",
+                  "Devon",
+                  "South West"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "1",
+                  "529397",
+                  "174374",
+                  "England",
+                  "London",
+                  "-0.139096",
+                  "51.45357",
+                  "London",
+                  "Lambeth",
+                  "London"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "1",
+                  "377771",
+                  "131822",
+                  "England",
+                  "South West",
+                  "-2.31874",
+                  "51.085279",
+                  "South West",
+                  "Wiltshire",
+                  "South West"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIResultSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:43.722Z",
+        "line": 36,
+        "name": "Validate Post API result section values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-result-section-values-by-passing-single/multiple-postcodes-as-payload;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 183887100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user calls PostBulkPostcodeLookup API passing \"PR3 0SG,M45 6GN,EX165BL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PR3 0SG,M45 6GN,EX165BL\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Validate PostBulkPostcodeLookup API result sections values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_result_section_values(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "lsoa",
+                  "msoa",
+                  "incode",
+                  "outcode",
+                  "parliamentary_constituency",
+                  "admin_district",
+                  "parish",
+                  "admin_county",
+                  "admin_ward",
+                  "ced",
+                  "ccg",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "Wyre 006A",
+                  "Wyre 006",
+                  "0SG",
+                  "PR3",
+                  "Wyre and Preston North",
+                  "Wyre",
+                  "Myerscough and Bilsborrow",
+                  "Lancashire",
+                  "Brock with Catterall",
+                  "Wyre Rural East",
+                  "NHS Fylde and Wyre",
+                  "Lancaster and Wyre"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "Bury 019C",
+                  "Bury 019",
+                  "6GN",
+                  "M45",
+                  "Bury South",
+                  "Bury",
+                  "Bury, unparished area",
+                  "",
+                  "Pilkington Park",
+                  "",
+                  "NHS Bury",
+                  "Greater Manchester North East"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "Mid Devon 005C",
+                  "Mid Devon 005",
+                  "5BL",
+                  "EX16",
+                  "Tiverton and Honiton",
+                  "Mid Devon",
+                  "Tiverton",
+                  "Devon",
+                  "Westexe",
+                  "Tiverton West",
+                  "NHS Devon",
+                  "Devon CC"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "Lambeth 019A",
+                  "Lambeth 019",
+                  "9HS",
+                  "SW4",
+                  "Streatham",
+                  "Lambeth",
+                  "Lambeth, unparished area",
+                  "",
+                  "Clapham Common",
+                  "",
+                  "NHS South East London",
+                  "Lambeth"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "Wiltshire 050C",
+                  "Wiltshire 050",
+                  "6PN",
+                  "BA12",
+                  "South West Wiltshire",
+                  "Wiltshire",
+                  "Zeals",
+                  "",
+                  "Mere",
+                  "",
+                  "NHS Bath and North East Somerset, Swindon and Wiltshire",
+                  "Wiltshire"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIResultSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:43.926Z",
+        "line": 37,
+        "name": "Validate Post API result section values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-result-section-values-by-passing-single/multiple-postcodes-as-payload;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 178889300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user calls PostBulkPostcodeLookup API passing \"SW4 9HS,,BA12 6PN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SW4 9HS,,BA12 6PN\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Validate PostBulkPostcodeLookup API result sections values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_result_section_values(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "lsoa",
+                  "msoa",
+                  "incode",
+                  "outcode",
+                  "parliamentary_constituency",
+                  "admin_district",
+                  "parish",
+                  "admin_county",
+                  "admin_ward",
+                  "ced",
+                  "ccg",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "Wyre 006A",
+                  "Wyre 006",
+                  "0SG",
+                  "PR3",
+                  "Wyre and Preston North",
+                  "Wyre",
+                  "Myerscough and Bilsborrow",
+                  "Lancashire",
+                  "Brock with Catterall",
+                  "Wyre Rural East",
+                  "NHS Fylde and Wyre",
+                  "Lancaster and Wyre"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "Bury 019C",
+                  "Bury 019",
+                  "6GN",
+                  "M45",
+                  "Bury South",
+                  "Bury",
+                  "Bury, unparished area",
+                  "",
+                  "Pilkington Park",
+                  "",
+                  "NHS Bury",
+                  "Greater Manchester North East"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "Mid Devon 005C",
+                  "Mid Devon 005",
+                  "5BL",
+                  "EX16",
+                  "Tiverton and Honiton",
+                  "Mid Devon",
+                  "Tiverton",
+                  "Devon",
+                  "Westexe",
+                  "Tiverton West",
+                  "NHS Devon",
+                  "Devon CC"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "Lambeth 019A",
+                  "Lambeth 019",
+                  "9HS",
+                  "SW4",
+                  "Streatham",
+                  "Lambeth",
+                  "Lambeth, unparished area",
+                  "",
+                  "Clapham Common",
+                  "",
+                  "NHS South East London",
+                  "Lambeth"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "Wiltshire 050C",
+                  "Wiltshire 050",
+                  "6PN",
+                  "BA12",
+                  "South West Wiltshire",
+                  "Wiltshire",
+                  "Zeals",
+                  "",
+                  "Mere",
+                  "",
+                  "NHS Bath and North East Somerset, Swindon and Wiltshire",
+                  "Wiltshire"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIResultSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:44.124Z",
+        "line": 52,
+        "name": "Validate Post API codes section values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-codes-section-values-by-passing-single/multiple-postcodes-as-payload;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 195228400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user calls PostBulkPostcodeLookup API passing \"PR3 0SG,M45 6GN,EX165BL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PR3 0SG,M45 6GN,EX165BL\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2993600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Validate PostBulkPostcodeLookup API codes sections values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_codes_section_values(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "admin_district",
+                  "admin_county",
+                  "admin_ward",
+                  "parish",
+                  "parliamentary_constituency",
+                  "ccg",
+                  "ccg_id",
+                  "ced",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "E07000128",
+                  "E10000017",
+                  "E05009934",
+                  "E04005340",
+                  "E14001057",
+                  "E38000226",
+                  "02M",
+                  "E58000832",
+                  "UKD44"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "E08000002",
+                  "E99999999",
+                  "E05000677",
+                  "E43000156",
+                  "E14000612",
+                  "E38000024",
+                  "00V",
+                  "E99999999",
+                  "UKD37"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "E07000042",
+                  "E10000008",
+                  "E05003531",
+                  "E04003055",
+                  "E14000996",
+                  "E38000230",
+                  "15N",
+                  "E58000304",
+                  "UKK43"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "E09000022",
+                  "E99999999",
+                  "E05000418",
+                  "E43000212",
+                  "E14000978",
+                  "E38000244",
+                  "72Q",
+                  "E99999999",
+                  "UKI45"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "E06000054",
+                  "E99999999",
+                  "E05008378",
+                  "E04011875",
+                  "E14000954",
+                  "E38000231",
+                  "92G",
+                  "E99999999",
+                  "UKK15"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPICodesSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:44.353Z",
+        "line": 53,
+        "name": "Validate Post API codes section values by passing single/multiple Postcodes as payload",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-post-api-codes-section-values-by-passing-single/multiple-postcodes-as-payload;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 210872900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user calls PostBulkPostcodeLookup API passing \"SW4 9HS,,BA12 6PN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SW4 9HS,,BA12 6PN\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_calls_post_bulk_postcode_lookup_api(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2997700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Validate PostBulkPostcodeLookup API codes sections values",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.validate_post_bulk_postcode_lookup_api_codes_section_values(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Postcode",
+                  "admin_district",
+                  "admin_county",
+                  "admin_ward",
+                  "parish",
+                  "parliamentary_constituency",
+                  "ccg",
+                  "ccg_id",
+                  "ced",
+                  "nuts"
+                ]
+              },
+              {
+                "cells": [
+                  "PR3 0SG",
+                  "E07000128",
+                  "E10000017",
+                  "E05009934",
+                  "E04005340",
+                  "E14001057",
+                  "E38000226",
+                  "02M",
+                  "E58000832",
+                  "UKD44"
+                ]
+              },
+              {
+                "cells": [
+                  "M45 6GN",
+                  "E08000002",
+                  "E99999999",
+                  "E05000677",
+                  "E43000156",
+                  "E14000612",
+                  "E38000024",
+                  "00V",
+                  "E99999999",
+                  "UKD37"
+                ]
+              },
+              {
+                "cells": [
+                  "EX165BL",
+                  "E07000042",
+                  "E10000008",
+                  "E05003531",
+                  "E04003055",
+                  "E14000996",
+                  "E38000230",
+                  "15N",
+                  "E58000304",
+                  "UKK43"
+                ]
+              },
+              {
+                "cells": [
+                  "SW4 9HS",
+                  "E09000022",
+                  "E99999999",
+                  "E05000418",
+                  "E43000212",
+                  "E14000978",
+                  "E38000244",
+                  "72Q",
+                  "E99999999",
+                  "UKI45"
+                ]
+              },
+              {
+                "cells": [
+                  "BA12 6PN",
+                  "E06000054",
+                  "E99999999",
+                  "E05008378",
+                  "E04011875",
+                  "E14000954",
+                  "E38000231",
+                  "92G",
+                  "E99999999",
+                  "UKK15"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPICodesSection"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:44.583Z",
+        "line": 62,
+        "name": "Validate Error codes through POST API method",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-error-codes-through-post-api-method;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 167297600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user calls PostBulkPostcodeLookup API to check invalid scenarios based on \"InvalidJson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"InvalidJson\"",
+                  "offset": 74
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.call_post_bulk_postcode_lookup_api_to_check_invalid_scenarios(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user validate PostBulkPostcodeLookup API 400 and \"Invalid JSON submitted.\nYou need to submit a JSON object with an array of postcodes or geolocation objects.\nAlso ensure that Content-Type is set to application/json\n\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Invalid JSON submitted.\nYou need to submit a JSON object with an array of postcodes or geolocation objects.\nAlso ensure that Content-Type is set to application/json\n\"",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_validate_post_bulk_postcode_lookup_api_and(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIErrorCodes"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2019000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:44.778Z",
+        "line": 63,
+        "name": "Validate Error codes through POST API method",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-error-codes-through-post-api-method;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 161097000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user calls PostBulkPostcodeLookup API to check invalid scenarios based on \"Morethan100PostcodesSubmitted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Morethan100PostcodesSubmitted\"",
+                  "offset": 74
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.call_post_bulk_postcode_lookup_api_to_check_invalid_scenarios(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user validate PostBulkPostcodeLookup API 400 and \"Too many postcodes submitted. Up to 100 postcodes can be bulk requested at a time\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Too many postcodes submitted. Up to 100 postcodes can be bulk requested at a time\"",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_validate_post_bulk_postcode_lookup_api_and(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIErrorCodes"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 998400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL of PostBulkPostcodeLookup API",
+            "match": {
+              "location": "StepDefinitions.PostBulkPostcodeLookup.configure_the_base_url_of_post_bulk_postcode_lookup_api()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-23T23:38:44.972Z",
+        "line": 64,
+        "name": "Validate Error codes through POST API method",
+        "description": "",
+        "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload;validate-error-codes-through-post-api-method;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 162899100,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user calls PostBulkPostcodeLookup API to check invalid scenarios based on \"InvalidResource\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"InvalidResource\"",
+                  "offset": 74
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.call_post_bulk_postcode_lookup_api_to_check_invalid_scenarios(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user validate PostBulkPostcodeLookup API 404 and \"Resource not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Resource not found\"",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinitions.PostBulkPostcodeLookup.user_validate_post_bulk_postcode_lookup_api_and(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BulkPostAPIPostcodesLookup"
+          },
+          {
+            "name": "@PostAPIErrorCodes"
+          }
+        ]
+      }
+    ],
+    "name": "POST API call by passing multiple Postcodes as a payload",
+    "description": "",
+    "id": "post-api-call-by-passing-multiple-postcodes-as-a-payload",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/PostBulkPostcodeLookup.feature",
+    "tags": [
+      {
+        "name": "@BulkPostAPIPostcodesLookup",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

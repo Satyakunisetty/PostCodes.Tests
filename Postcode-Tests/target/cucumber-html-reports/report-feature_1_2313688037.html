@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Feature: Get Method API call using Postcode as a optional Query parameter</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>24 Aug 2020, 00:38</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Get Method API call using Postcode as a optional Query parameter</td>
+          <td      class="passed"    >35</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">35</td>
+
+          <td  class="passed"    >12</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td class="duration" data-value="2626393800">2.626</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Get Method API call using Postcode as a optional Query parameter</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_678876803.html">@GetAPIQueryResultSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.195</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Get API values by using Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10 1ED&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10 1ED&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.191</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API response values like <span class="argument">1</span>,<span class="argument">526993</span>,<span class="argument">136858</span>,<span class="argument">&quot;England&quot;</span>,<span class="argument">&quot;South East Coast&quot;</span>,<span class="argument">-0.187002</span>,<span class="argument">51.116948</span>,<span class="argument">&quot;South East&quot;</span>,<span class="argument">&quot;West Sussex&quot;</span> and <span class="argument">&quot;South East&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_678876803.html">@GetAPIQueryResultSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.186</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Get API values by using Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;CR0 2WR&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;CR0 2WR&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API response values like <span class="argument">1</span>,<span class="argument">532440</span>,<span class="argument">166172</span>,<span class="argument">&quot;England&quot;</span>,<span class="argument">&quot;London&quot;</span>,<span class="argument">-0.098363</span>,<span class="argument">51.379158</span>,<span class="argument">&quot;London&quot;</span>,<span class="argument">&quot;Croydon&quot;</span> and <span class="argument">&quot;London&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_678876803.html">@GetAPIQueryResultSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.257</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate result section values from Get API values by passing Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10 1ED&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10 1ED&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.255</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API result section values like <span class="argument">&quot;Crawley 004C&quot;</span>,<span class="argument">&quot;Crawley 004&quot;</span>,<span class="argument">&quot;1ED&quot;</span>,<span class="argument">&quot;RH10&quot;</span>,<span class="argument">&quot;Crawley&quot;</span>,<span class="argument">&quot;Crawley&quot;</span>,<span class="argument">&quot;Crawley, unparished area&quot;</span>,<span class="argument">&quot;West Sussex&quot;</span>,<span class="argument">&quot;Three Bridges&quot;</span>,<span class="argument">&quot;Northgate &amp; West Green&quot;</span>,<span class="argument">&quot;NHS West Sussex&quot;</span>,<span class="argument">&quot;West Sussex (North East)&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_678876803.html">@GetAPIQueryResultSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.189</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate result section values from Get API values by passing Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;CR0 2WR&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;CR0 2WR&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.188</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API result section values like <span class="argument">&quot;Croydon 027C&quot;</span>,<span class="argument">&quot;Croydon 027&quot;</span>,<span class="argument">&quot;2WR&quot;</span>,<span class="argument">&quot;CR0&quot;</span>,<span class="argument">&quot;Croydon Central&quot;</span>,<span class="argument">&quot;Croydon&quot;</span>,<span class="argument">&quot;Croydon, unparished area&quot;</span>,<span class="argument">&quot;&quot;</span>,<span class="argument">&quot;Fairfield&quot;</span>,<span class="argument">&quot;&quot;</span>,<span class="argument">&quot;NHS South West London&quot;</span>,<span class="argument">&quot;Croydon&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_1643773410.html">@GetAPIQueryCodesSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.169</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate codes section values from Get API values by passing Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10 1ED&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10 1ED&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.167</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API codes section values like <span class="argument">&quot;E07000226&quot;</span>,<span class="argument">&quot;E10000032&quot;</span>,<span class="argument">&quot;E05012925&quot;</span>,<span class="argument">&quot;E43000148&quot;</span>,<span class="argument">&quot;E14000652&quot;</span>,<span class="argument">&quot;E38000248&quot;</span>,<span class="argument">&quot;70F&quot;</span>,<span class="argument">&quot;E58001645&quot;</span>,<span class="argument">&quot;UKJ28&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_1643773410.html">@GetAPIQueryCodesSection</a>
+</div>
+
+
+  <span class="lead-duration duration">0.198</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate codes section values from Get API values by passing Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;CR0 2WR&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;CR0 2WR&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.197</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API codes section values like <span class="argument">&quot;E09000008&quot;</span>,<span class="argument">&quot;E99999999&quot;</span>,<span class="argument">&quot;E05011468&quot;</span>,<span class="argument">&quot;E43000198&quot;</span>,<span class="argument">&quot;E14000654&quot;</span>,<span class="argument">&quot;E38000245&quot;</span>,<span class="argument">&quot;36L&quot;</span>,<span class="argument">&quot;E99999999&quot;</span>,<span class="argument">&quot;UKI62&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2192568840.html">@GetAPIQueryforPartialPostcode</a>
+</div>
+
+
+  <span class="lead-duration duration">0.199</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Get API values by using partial Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.197</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API response values based on Partial postcode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>Postcode</td>
+                  <td>quality</td>
+                  <td>eastings</td>
+                  <td>northings</td>
+                  <td>country</td>
+                  <td>nhs_ha</td>
+                  <td>longitude</td>
+                  <td>latitude</td>
+                  <td>european_electoral_region</td>
+                  <td>primary_care_trust</td>
+                  <td>region</td>
+              </tr>
+              <tr>
+                  <td>RH10 0EZ</td>
+                  <td>1</td>
+                  <td>526911</td>
+                  <td>136846</td>
+                  <td>England</td>
+                  <td>South East Coast</td>
+                  <td>-0.188177</td>
+                  <td>51.116858</td>
+                  <td>South East</td>
+                  <td>West Sussex</td>
+                  <td>South East</td>
+              </tr>
+              <tr>
+                  <td>RH10 0AG</td>
+                  <td>1</td>
+                  <td>526911</td>
+                  <td>136846</td>
+                  <td>England</td>
+                  <td>South East Coast</td>
+                  <td>-0.188177</td>
+                  <td>51.116858</td>
+                  <td>South East</td>
+                  <td>West Sussex</td>
+                  <td>South East</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2192568840.html">@GetAPIQueryforPartialPostcode</a>
+</div>
+
+
+  <span class="lead-duration duration">0.253</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Get API values of result section by using partial Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.251</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validate GetPostcodeQuery API response result section values based on Partial postcode</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>Postcode</td>
+                  <td>lsoa</td>
+                  <td>msoa</td>
+                  <td>incode</td>
+                  <td>outcode</td>
+                  <td>parliamentary_constituency</td>
+                  <td>admin_district</td>
+                  <td>parish</td>
+                  <td>admin_county</td>
+                  <td>admin_ward</td>
+                  <td>ced</td>
+                  <td>ccg</td>
+                  <td>nuts</td>
+              </tr>
+              <tr>
+                  <td>RH10 0EZ</td>
+                  <td>Crawley 004C</td>
+                  <td>Crawley 004</td>
+                  <td>0EZ</td>
+                  <td>RH10</td>
+                  <td>Crawley</td>
+                  <td>Crawley</td>
+                  <td>Crawley, unparished area</td>
+                  <td>West Sussex</td>
+                  <td>Three Bridges</td>
+                  <td>Northgate &amp; West Green</td>
+                  <td>NHS West Sussex</td>
+                  <td>West Sussex (North East)</td>
+              </tr>
+              <tr>
+                  <td>RH10 0AG</td>
+                  <td>Crawley 004C</td>
+                  <td>Crawley 004</td>
+                  <td>0AG</td>
+                  <td>RH10</td>
+                  <td>Crawley</td>
+                  <td>Crawley</td>
+                  <td>Crawley, unparished area</td>
+                  <td>West Sussex</td>
+                  <td>Three Bridges</td>
+                  <td>Northgate &amp; West Green</td>
+                  <td>NHS West Sussex</td>
+                  <td>West Sussex (North East)</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2192568840.html">@GetAPIQueryforPartialPostcode</a>
+</div>
+
+
+  <span class="lead-duration duration">0.271</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Get API values of codes section by using partial Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;RH10&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;RH10&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.270</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates GetPostcodeQuery API response codes section values based on Partial postcode</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>Postcode</td>
+                  <td>admin_district</td>
+                  <td>admin_county</td>
+                  <td>admin_ward</td>
+                  <td>parish</td>
+                  <td>parliamentary_constituency</td>
+                  <td>ccg</td>
+                  <td>ccg_id</td>
+                  <td>ced</td>
+                  <td>nuts</td>
+              </tr>
+              <tr>
+                  <td>RH10 0EZ</td>
+                  <td>E07000226</td>
+                  <td>E10000032</td>
+                  <td>E05012925</td>
+                  <td>E43000148</td>
+                  <td>E14000652</td>
+                  <td>E38000248</td>
+                  <td>70F</td>
+                  <td>E58001645</td>
+                  <td>UKJ28</td>
+              </tr>
+              <tr>
+                  <td>RH10 0AG</td>
+                  <td>E07000226</td>
+                  <td>E10000032</td>
+                  <td>E05012925</td>
+                  <td>E43000148</td>
+                  <td>E14000652</td>
+                  <td>E38000248</td>
+                  <td>70F</td>
+                  <td>E58001645</td>
+                  <td>UKJ28</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2180663063.html">@GetAPIQueryErroCodes</a>
+</div>
+
+
+  <span class="lead-duration duration">0.264</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error codes from Get API method by passing Invalid/Empty Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;CR0 2WR 123&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;CR0 2WR 123&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.263</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validate GetPostcodeQuery API <span class="argument">200</span> and <span class="argument">&quot;&quot;</span> based on <span class="argument">&quot;CR0 2WR 123&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2180663063.html">@GetAPIQueryErroCodes</a>
+</div>
+
+
+  <span class="lead-duration duration">0.282</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error codes from Get API method by passing Invalid/Empty Postcode as Query parameter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls GetPostcodeQueryAPI based on <span class="argument">&quot;&quot;</span> value</span>
+
+  <span class="lead-duration duration">0.281</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validate GetPostcodeQuery API <span class="argument">400</span> and <span class="argument">&quot;No postcode query submitted. Remember to include query parameter&quot;</span> based on <span class="argument">&quot;&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_177334289.html">@GetAPIPostcodeQueryParameter</a>
+       <a href="report-tag_2180663063.html">@GetAPIQueryErroCodes</a>
+</div>
+
+
+  <span class="lead-duration duration">0.154</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error codes from Get API method by passing Invalid Resource</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User configure the base URL of GetPostcodeQuery API using <span class="argument">&quot;CR0 2WR&quot;</span> and <span class="argument">&quot;InvalidResource&quot;</span></span>
+
+  <span class="lead-duration duration">0.154</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validate API response using <span class="argument">&quot;InvalidResource&quot;</span>, <span class="argument">404</span> and <span class="argument">&quot;Resource not found&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
